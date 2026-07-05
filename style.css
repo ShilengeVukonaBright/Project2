@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+    transition: .5s ease;
+
+}
+h1{
+        font-size: 2rem;
+    }
+h2{
+    color: white;
+}
+h3{
+    color: white;
+}
+
+p{
+    font-size: 1rem;
+}
+body{
+    background: rgba(25,25,25, 0.5);
+}
+img{
+    height: 30rem;
+    border-radius: 50%;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 2rem;
+    padding: 3rem;
+}
+li{
+    text-shadow: 4px 0px 2px black;
+   
+}
+li a{
+    color:white;
+    font-weight: 600;
+}
+li a:hover{
+    color: rgba(0, 0, 0,0.6);
+    transition: .6s;
+     text-shadow: none;
+}
+.profile h1{
+    padding:2rem ;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 3rem;
+}
+.img{
+    filter: drop-shadow(3px 4px 29px white);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+h4{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 2rem;
+    cursor: pointer;
+}
+.span-one{
+    background: rgba(25,25,251, 0.5);
+    font-weight: 800;
+    text-shadow: 2px 0px 3px black;
+    color: white;
+    letter-spacing: 2px;
+}
+.Span-two{
+    background: rgba(25,251,252, 0.9);
+}
+
+.Profile{
+    text-align: center;
+    margin-top: 2rem;
+    text-decoration: underline;
+    margin: 4rem;
+    letter-spacing: 3px;
+    
+}
+#career{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    'A B'
+    'C C';
+    gap: 1rem;
+    padding: 2rem;
+    cursor: pointer;
+
+}
+
+.c-heading{
+    text-decoration:2px underline;
+    margin: 1rem;
+    letter-spacing: 2px;
+}
+.primary-programming-language{
+    grid-area: A;
+    text-align: center;
+    background-color: black;
+    border: 3px solid white;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.primary-programming-language:hover{
+    background:rgba(25,25,251, 0.5);
+    border: 2px solid black;
+    transition: .9s ;
+}
+.primary-programming-language h3{
+    font-weight: 300;
+
+}
+
+.experience{
+    grid-area: B;
+    text-align: center;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+.experience:hover{
+    background:rgba(25,25,251, 0.5);
+    border: 2px solid black;
+    transition: .9s ;
+}
+.experience h3{
+    font-weight: 300;
+}
+.Achievement{
+    grid-area: C;
+    text-align: center;
+    background-color: black;
+    padding: 3rem;
+    border: 3px solid white;
+}
+
+.Achievement h3{
+    font-weight: 300;
+    font-size: 1rem;
+}
+.Achievement h2{
+    font-weight:700;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    margin: 1rem;
+}
+.experience h3{
+    padding: 1rem;
+}
+.about-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    'e f'
+    'r r'
+    't y';
+    gap: 2rem;
+    text-align: center;
+    padding: 1rem;
+    
+}
+#About-container h1{
+    text-align: center;
+    margin: 1rem;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+.about-one{
+    grid-area: e;
+    border: 3px solid white;
+    padding: 0.5rem;
+    background: rgba(25,251,252, 0.9);
+    border-radius: 12px;
+    color: black;
+}
+.about-two{
+    grid-area: f;
+    border: 3px solid white;
+    padding: 0.5rem;
+    background: rgba(25,251,252, 0.9);
+    border-radius: 12px;
+    color: black;
+
+  
+}
+.about-three{
+    grid-area: r;
+    border: 3px solid white;
+    padding: 0.5rem;
+    background: rgba(25,251,252, 0.9);
+    color: black;
+    
+
+}
+.about-four{
+    color: black;
+    grid-area: t;
+    border: 3px solid white;
+    padding: 0.5rem;
+    background: rgba(25,251,252, 0.9);
+    border-radius: 12px;
+
+}
+.about-five{
+    color: black;
+    grid-area: y;
+    border: 3px solid white;
+    padding: 0.5rem;
+    background: rgba(25,251,252, 0.9);
+    border-radius: 12px;
+}
+.project-h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 3rem;
+    letter-spacing: 3px;
+}
+
+.project-container{
+    background: rgba(1101, 10, 101,0.6);
+    display: flex;
+    justify-content: center;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    height: 14rem;
+    border-radius: 16px;
+    margin-top: 5rem;
+    box-shadow: 3px 4px 10px white;
+    border: 3px solid black;
+}
+#myProjects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:4rem;
+}
+#myProjects p a{
+    display: flex;
+    text-align: center;   
+}
+p a{
+    color:white;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 4px 2px black;
+    text-decoration: 2px underline;
+}
+p a:hover{
+    color: blue;
+    transition: .7s;
+    text-shadow: none;
+}
+footer{
+    color: black;
+    margin:4rem;
+}
+.contact-header{
+    color:black;
+    text-decoration: 2px underline;
+    text-align: center;
+    letter-spacing: 3px;
+}
+#Contact-container{
+    margin: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+.fa-envelope{
+    color:rgb(242,30, 0.3);
+    cursor: pointer;
+    text-shadow: 4px 2px 4px black;
+}
+.fa-linkedin{
+    color:lightblue;
+    cursor: pointer;
+    text-shadow: 4px 2px 4px black;
+}
+.fa-whatsapp{
+    color:greenyellow;
+    cursor: pointer;
+    text-shadow: 4px 2px 4px black;
+}
+.fa-github{
+        text-shadow: 4px 2px 7px black;
+        cursor: pointer;
+}
+.copy{
+    margin: 6rem;
+    background-color: aliceblue;
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
